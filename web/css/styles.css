@@ -8244,6 +8244,15 @@ fieldset:disabled .btn {
   font-weight: 700 !important;
 }
 
+.boldtxt {
+  font-weight: bolder;
+  color: white;
+}
+
+.mission {
+  color: white;
+}
+
 .fw-bolder {
   font-weight: bolder !important;
 }
