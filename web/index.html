@@ -26,17 +26,25 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <div class="tab">
-                        <button class="tablinks" onclick="openCity(event, 'drive.html')">Map</button>
-                        <button class="tablinks" onclick="openCity(event, 'Map')">Drive</button>
-                        <button class="tablinks" onclick=mybutton()>About Us</button>
+                        <button class="tablinks" onclick=mapbutton()>Map</button>
+                        <button class="tablinks" onclick=drivebutton()>Drive</button>
+                        <button class="tablinks" onclick=abtbutton()>About Us</button>
                         <style>
                             .tablinks{
                                 background-color:green;
 
                             }
                         </style>
-                        <script> function mybutton(){
-                            window.location='drive.html';}
+                        <script> 
+                        function abtbutton(){
+                            window.location='drive.html';
+                        }
+                        function mapbtn(){
+                            window.location='map.html';
+                        }
+                        function drivebtn(){
+                            window.location='drive.html';
+                        }
                         </script>
                       </div>
                 </div>
