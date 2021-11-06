@@ -89,7 +89,6 @@
   }
 }
 
-
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -642,7 +641,8 @@ progress {
 }
 
 .hello {
-  background-image: url("../assets/img/Sign-in-form.jpg");
+  font-size: large;
+  color: white;
 }
 .img-fluid-bottom {
   position: relative;
