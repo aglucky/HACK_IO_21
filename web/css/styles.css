@@ -640,6 +640,25 @@ progress {
   height: auto;
 }
 
+.img-fluid-bottom {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.7) 75%,
+      #000 100%
+    ),
+    url("../assets/img/lightscar.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
