@@ -1,0 +1,23 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-forest-staging-144318-authRole",
+      "UnauthRoleArn": "arn:aws:iam::321524281361:role/amplify-forest-staging-144318-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::321524281361:role/amplify-forest-staging-144318-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-forest-staging-144318-deployment",
+      "UnauthRoleName": "amplify-forest-staging-144318-unauthRole",
+      "StackName": "amplify-forest-staging-144318",
+      "StackId": "arn:aws:cloudformation:us-east-1:321524281361:stack/amplify-forest-staging-144318/e22be6b0-3f0f-11ec-8308-1294df89192f",
+      "AmplifyAppId": "d3ar1qtl2sq4im"
+    },
+    "categories": {
+      "function": {
+        "forestapi": {
+          "deploymentBucketName": "amplify-forest-staging-144318-deployment",
+          "s3Key": "amplify-builds/forestapi-6e626c58547159623779-build.zip"
+        }
+      }
+    }
+  }
+}
