@@ -64,7 +64,7 @@
     "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0),
     rgba(255, 255, 255, 0)
   );
   --bs-body-font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI,
@@ -642,7 +642,8 @@ progress {
 
 .img-fluid-bottom {
   position: relative;
-  width: 100%;
+  left: -110px;
+  width: 120%;
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
@@ -6971,7 +6972,7 @@ fieldset:disabled .btn {
   -webkit-mask-image: linear-gradient(
     130deg,
     #000 55%,
-    rgba(0, 0, 0, 0.8) 75%,
+    rgba(0, 0, 0, 0.8) 50%,
     #000 95%
   );
   mask-image: linear-gradient(
@@ -8244,6 +8245,15 @@ fieldset:disabled .btn {
   font-weight: 700 !important;
 }
 
+.boldtxt {
+  font-weight: bolder;
+  color: white;
+}
+
+.mission {
+  color: white;
+}
+
 .fw-bolder {
   font-weight: bolder !important;
 }
@@ -8363,6 +8373,7 @@ fieldset:disabled .btn {
 .text-white {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+  font-size: 72px;
 }
 
 .text-body {
@@ -12005,8 +12016,8 @@ body {
   padding: 15rem 0;
   background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.3) 0%,
-      rgba(0, 0, 0, 0.7) 75%,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 0%,
       #000 100%
     ),
     url("../assets/img/andreas-kind-SwLPmCYo-QM-unsplash.jpg");
@@ -12063,8 +12074,8 @@ body {
   background: linear-gradient(
     to bottom,
     #000 0%,
-    rgba(0, 0, 0, 0.9) 75%,
-    rgba(0, 0, 0, 0.8) 100%
+    rgba(0, 0, 0, 1) 75%,
+    rgba(0, 0, 0, 1) 100%
   );
 }
 .about-section p {
