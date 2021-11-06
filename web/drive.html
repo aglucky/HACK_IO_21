@@ -77,22 +77,29 @@
             </div> 
         </nav>
         <!-- Masthead-->
+
         <header class="masthead">
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
-                        <button class="btn-btn-primary" onclick=>Simulate Driving</button>
+                        <h1 class="hello">Accident Detection</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Upload A File</h2>
+                        <button class="btn-btn-primary" onclick="document.getElementById('fileInput').click();">Simulate Driving</button>
+                        <input id="fileInput" type="file" style="display:none;" />
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">  </h2>
+                        <h1 class="hello">Accident Prevention</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Here's What to Do</h2>
                         <style>
                             .btn-btn-primary{
                                 background-color: #4CAF50; /* Green */
                                 border: none;
                                 color: green;
-                                padding: 50px 100px;
+                                padding: 8px 16px;
                                 text-align: center;
                                 text-decoration: none;
                                 display: inline-block;
                                 font-size: 16px;
-                                border-radius: 20px;
+                                border-radius: 10px;
                                 font-family: 'Times New Roman', Times, serif;
                                 font-size: 200%;
                             }
@@ -102,17 +109,30 @@
                                 color: white !important;
                                 content: "Completed!" !important;
                                 }
+
+                            .acc_form{
+                                justify-content: center;
+                                font-family: 'Times New Roman', Times, serif;
+                                font-size: large;
+                                font-weight: bold;
+                            }
                         </style>
                     </div>
                 </div>
             </div>
         </header>
         <!-- About-->
-        <form action="/action_page.php">
-            <label for="fname">Accident Description: </label>
+        <div class="acc_form">
+            <center>
+            <label class="acc_prev"for="fname">Accident Description: </label>
+            </center>
+            <center>
             <input type="text" id="fname" name="fname"><br><br>
-            <input type="generate driving advice" value="Generate Driving Advice">
-          </form>
+            </center>
+            <center>
+            <button type="generate driving advice" value="Generate Driving Advice">Generate Driving Advice</button>
+            </center>
+        </div>
         <!-- Footer-->
         <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Your Website 2021</div></footer>
         <!-- Bootstrap core JS-->
