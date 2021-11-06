@@ -1,0 +1,5 @@
+{
+    "tableName": "forestdb",
+    "partitionKeyName": "time",
+    "partitionKeyType": "N"
+}
