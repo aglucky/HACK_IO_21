@@ -8373,6 +8373,7 @@ fieldset:disabled .btn {
 .text-white {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+  font-size: 72px;
 }
 
 .text-body {
