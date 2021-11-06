@@ -103,13 +103,31 @@
                                 font-family: 'Times New Roman', Times, serif;
                                 font-size: 200%;
                             }
+                            .h3{
+                                font-size: 72px;
+                                font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",
+                                Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+                                "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                            }
                             .btn-btn-primary:hover {
                                 border: 0px solid #1292e1;
                                 background: rgb(0, 119, 128);
                                 color: white !important;
                                 content: "Completed!" !important;
                                 }
-
+                                .btn-btn-primary2, .btn-btn-primary:hover{
+                                background-color: #4CAF50; /* Green */
+                                border: none;
+                                color: green;
+                                padding: 4px 8px;
+                                text-align: center;
+                                text-decoration: none;
+                                display: inline-block;
+                                font-size: 16px;
+                                border-radius: 10px;
+                                font-family: 'Times New Roman', Times, serif;
+                                font-size: 200%;
+                                }
                             .acc_form{
                                 justify-content: center;
                                 font-family: 'Times New Roman', Times, serif;
@@ -126,11 +144,14 @@
             <center>
             <label class="acc_prev"for="fname">Accident Description: </label>
             </center>
+            
+                <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+            
             <center>
-            <input type="text" id="fname" name="fname"><br><br>
-            </center>
-            <center>
-            <button class="btn-btn-primary"type="generate driving advice" value="Generate Driving Advice">Generate Driving Advice</button>
+            <button class="btn-btn-primary2" type="generate driving advice" value="Generate Driving Advice">Generate Driving Advice</button>
             </center>
         </div>
         <!-- Footer-->
