@@ -26,9 +26,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <div class="tab">
-                        <button class="tablinks" onclick="openCity(event, 'drive.html')">Map</button>
-                        <button class="tablinks" onclick="openCity(event, 'Map')">Drive</button>
-                        <button class="tablinks" onclick=mybutton()>About Us</button>
+                        <button class="tablinks" onclick=mapbtn()>Map</button>
+                        <button class="tablinks" onclick=drivebtn()>Drive</button>
+                        <button class="tablinks" onclick=abtbtn()>About Us</button>
                         <style>
                             .tablinks{
                                 background-color: #4CAF50; /* Green */
@@ -43,7 +43,17 @@
                                 font-family:
                             }
                         </style>
-                        <script> function mybutton(){window.location='https://www.youtube.com';}</script>
+                        <script> 
+                        function abtbtn(){
+                            window.location='aboutUs.html';
+                        }
+                        function mapbtn(){
+                            window.location='map.html';
+                        }
+                        function drivebtn(){
+                            window.location='drive.html';
+                        }
+                        </script>
                       </div>
                 </div>
             </div>
@@ -55,7 +65,9 @@
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase">Grayscale</h1>
                         <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
-                        <a class="btn btn-primary" href="#about">Get Started</a>
+                        <button class="btn btn-primary" onclick=mapbtn()>MAP</button>
+                        <button class="btn btn-primary" onclick=drivebtn()>DRIVE</button>
+                        <button class="btn btn-primary" onclick=abtbtn()>ABOUT US</button>
                     </div>
                 </div>
             </div>
