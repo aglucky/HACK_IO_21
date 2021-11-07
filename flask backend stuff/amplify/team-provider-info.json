@@ -15,7 +15,11 @@
       "function": {
         "forestapi": {
           "deploymentBucketName": "amplify-forest-staging-144318-deployment",
-          "s3Key": "amplify-builds/forestapi-6e626c58547159623779-build.zip"
+          "s3Key": "amplify-builds/forestapi-386c7a576d7942535830-build.zip"
+        },
+        "forestapi2": {
+          "deploymentBucketName": "amplify-forest-staging-144318-deployment",
+          "s3Key": "amplify-builds/forestapi2-396b4f6f71734e766833-build.zip"
         }
       }
     }

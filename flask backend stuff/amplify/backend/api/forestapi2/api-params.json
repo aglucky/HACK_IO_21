@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/api2",
+      "lambdaFunction": "forestapi2",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/api2"
+    }
+  ],
+  "resourceName": "forestapi2",
+  "apiName": "forestapi2",
+  "functionArns": [
+    {
+      "lambdaFunction": "forestapi2"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-forest-staging-144318-authRole",
+    "unAuthRoleName": "amplify-forest-staging-144318-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "forestapi2",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}

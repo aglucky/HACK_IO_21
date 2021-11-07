@@ -4,6 +4,22 @@
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    },
+    "forestapi2": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [
+        {
+          "category": "storage",
+          "resourceName": "forestdb",
+          "attributes": [
+            "Name",
+            "Arn",
+            "StreamArn"
+          ]
+        }
+      ]
     }
   },
   "api": {
@@ -20,6 +36,26 @@
           ]
         }
       ]
+    },
+    "forestapi2": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "forestapi2",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ]
+    }
+  },
+  "storage": {
+    "forestdb": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation"
     }
   }
 }
