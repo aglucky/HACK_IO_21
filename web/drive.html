@@ -82,13 +82,23 @@
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">  </h2>
                         <h3 class="hello">Accident Detection</h3>
                         <h2 class="text-white-50 mx-auto mt-2 mb-5">Upload A File</h2>
                         <button class="btn-btn-primary" onclick="document.getElementById('fileInput').click();">Simulate Driving</button>
                         <input id="fileInput" type="file" style="display:none;" />
                         <h2 class="text-white-50 mx-auto mt-2 mb-5">  </h2>
-                        <h3 class="hello">Accident Prevention</h3>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Report  Accident</h2>
+                        <div class="acc_form">
+                            <div class="form-group">
+                                <label for="comment">Enter Accident Description here:</label>
+                            </div>
+                            <div class="text_area">
+                                <textarea class="form-control" value="Enter accident description here." rows="5" id="comment"></textarea>
+                            </div>
+                        <div class='yes'>
+                        <button class="btn-btn-primary2" type="generate driving advice" value="Generate Driving Advice">Generate Driving Advice</button>
+                        </div>
+                        </div>
                         <style>
                             .btn-btn-primary{
                                 background-color: #4CAF50; /* Green */
@@ -102,12 +112,6 @@
                                 border-radius: 10px;
                                 font-family: 'Times New Roman', Times, serif;
                                 font-size: 200%;
-                            }
-                            .h3{
-                                font-size: 72px;
-                                font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",
-                                Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-                                "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
                             }
                             .btn-btn-primary:hover {
                                 border: 0px solid #1292e1;
@@ -125,14 +129,41 @@
                                 display: inline-block;
                                 font-size: 16px;
                                 border-radius: 10px;
-                                font-family: 'Times New Roman', Times, serif;
+                                font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
                                 font-size: 200%;
                                 }
                             .acc_form{
                                 justify-content: center;
-                                font-family: 'Times New Roman', Times, serif;
+                                font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
                                 font-size: large;
                                 font-weight: bold;
+
+                            }
+                            .text_area{
+                                width:100%;
+                                display:flex;
+                                justify-content: center;
+                                align-self: center;
+                                text-align: center;
+                                align-content: center;
+                                display: block;
+                                margin-left: auto;
+                                margin-right: auto;
+                            }
+                            .form-group{
+                                align-self: center;
+                                text-align: center;
+                                background: transparent;
+                                color: white;
+
+                            }
+                            .yes{
+                                justify-content: center;
+                                text-align: center;
                             }
                         </style>
                     </div>
@@ -140,22 +171,9 @@
             </div>
         </header>
         <!-- About-->
-        <div class="acc_form">
-            <center>
-            <label class="acc_prev"for="fname">Accident Description: </label>
-            </center>
-            
-                <div class="form-group">
-                    <label for="comment">Comment:</label>
-                    <textarea class="form-control" rows="5" id="comment"></textarea>
-                </div>
-            
-            <center>
-            <button class="btn-btn-primary2" type="generate driving advice" value="Generate Driving Advice">Generate Driving Advice</button>
-            </center>
-        </div>
+
         <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Your Website 2021</div></footer>
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Forest 2021</div></footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
