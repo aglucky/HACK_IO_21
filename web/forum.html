@@ -14,13 +14,18 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styleforum.css" rel="stylesheet" />
-
     </head>
-    <body id="page-top">
+	<body id="page-top">
         <!-- Navigation-->
-		
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <button class="navbar-brand" onclick=hmbtn()>FOREST</button>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
                     <div class="tab">
-						<button class="tablinks" onclick=hmbtn()>Home</button>
                         <button class="tablinks" onclick=mapbtn()>Map</button>
                         <button class="tablinks" onclick=drivebtn()>Drive</button>
                         <button class="tablinks" onclick=abtbtn()>About Us</button>
@@ -143,46 +148,19 @@
 		.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
 			background-color: #ffffff !important;
 		}
+		.brand{
+			font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+			justify-content: center;
+			text-align: center;
+			
+		}
     </style>
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Forum</title>
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
-	</head>
 	
-	<body>
-		<header>
-			<!--NavBar Section-->
-			<div class="navbar">
-				<nav class="navigation hide" id="navigation">
-					<span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
-					<ul class="nav-list">
-						<li class="nav-item"><a href="forums.html">Forums</a></li>
-						<li class="nav-item"><a href="posts.html">Posts</a></li>
-						<li class="nav-item"><a href="detail.html">Detail</a></li>
-					</ul>
-				</nav>
 				<div class="brand">Community</div>
-			</div>
-			<!--SearchBox Section-->
-			<div class="search-box">
-				<div>
-					<select name="" id="">
-						<option value="Everything">Everything</option>
-						<option value="Titles">Titles</option>
-						<option value="Descriptions">Descriptions</option>
-					</select>
-					<input type="text" name="q" placeholder="search ...">
-					<button><i class="fa fa-search"></i></button>
 				</div>
-			</div>
-		</header>
+
 		<div class="container">
 			<div class="subforum">
 				<div class="subforum-title">
@@ -193,14 +171,14 @@
 						<i class="fa fa-car center"></i>
 					</div>
 					<div class="subforum-description subforum-column">
-						<h4><a href="#">Description Title</a></h4>
-						<p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
+						<h4><a href="#">RE: Dangerous corner on high street</a></h4>
+						<p>I had a close call on the intersection of High St. and West Lane Ave....(no replys)</p>
 					</div>
 					<div class="subforum-stats subforum-column center">
 						<span>24 Posts | 12 Topics</span>
 					</div>
 					<div class="subforum-info subforum-column">
-						<b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
+						<b><a href="">Last post</a></b> by <a href="">Bob_Yellow_92</a> 
 						<br>on <small>12 Dec 2020</small>
 					</div>
 				</div>
@@ -216,14 +194,65 @@
 						<i class="fa fa-car center"></i>
 					</div>
 					<div class="subforum-description subforum-column">
-						<h4><a href="#">Description Title</a></h4>
-						<p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
+						<h4><a href="#">RE: Dangerous Road Conditions</a></h4>
+						<p>Holy cow, did anyone else noticed the black ice on the streets today?</p>
 					</div>
 					<div class="subforum-stats subforum-column center">
-						<span>24 Posts | 12 Topics</span>
+						<span>2 Posts | 1 Topic</span>
 					</div>
 					<div class="subforum-info subforum-column">
-						<b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
+						<b><a href="">Last post</a></b> by <a href="">Joe_Olson</a> 
+						<br>on <small>13 Dec 2020</small>
+					</div>
+				</div>
+				<hr class="subforum-devider">
+				<div class="subforum-row">
+					<div class="subforum-icon subforum-column center">
+						<i class="fa fa-car center"></i>
+					</div>
+					<div class="subforum-description subforum-column">
+						<h4><a href="#">Relying-to-(Joe_Olson)</a></h4>
+						<p>Yeah!, my car almost slid off the road today, luckily I saved it.</p>
+					</div>
+					<div class="subforum-stats subforum-column center">
+						<span>4 Posts | 3 Topics</span>
+					</div>
+					<div class="subforum-info subforum-column">
+						<b><a href="">Last post</a></b> by <a href="">RebeccaDover64</a> 
+						<br>on <small>13 Dec 2020</small>
+					</div>
+				</div>
+				<hr class="subforum-devider">
+				<div class="subforum-row">
+					<div class="subforum-icon subforum-column center">
+						<i class="fa fa-car center"></i>
+					</div>
+					<div class="subforum-description subforum-column">
+						<h4><a href="#">Replying-to-(Rebeccaover64)</a></h4>
+						<p>Oh my gosh😱, that same thing happened to my cousin ysterday, i'm glad you both are ok!</p>
+					</div>
+					<div class="subforum-stats subforum-column center">
+						<span>3 Posts | 1 Topic</span>
+					</div>
+					<div class="subforum-info subforum-column">
+						<b><a href="">Last post</a></b> by <a href="">Joe_Olson</a> 
+						<br>on <small>13 Dec 2020</small>
+					</div>
+				</div>
+				<hr class="subforum-devider">
+				<div class="subforum-row">
+					<div class="subforum-icon subforum-column center">
+						<i class="fa fa-car center"></i>
+					</div>
+					<div class="subforum-description subforum-column">
+						<h4><a href="#">Relying-to-(Joe_Olson)</a></h4>
+						<p>I'm glad youre cousin is ok. Thank gosh that we have Forest to keep other people safe!!</p>
+					</div>
+					<div class="subforum-stats subforum-column center">
+						<span>5 Posts | 3 Topics</span>
+					</div>
+					<div class="subforum-info subforum-column">
+						<b><a href="">Last post</a></b> by <a href="">RebeccaDover64</a> 
 						<br>on <small>12 Dec 2020</small>
 					</div>
 				</div>
@@ -233,66 +262,15 @@
 						<i class="fa fa-car center"></i>
 					</div>
 					<div class="subforum-description subforum-column">
-						<h4><a href="#">Description Title</a></h4>
-						<p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
+						<h4><a href="#">Replying-to-(Rebeccaover64)</a></h4>
+						<p>I know!; right before the crash happened forest alerted me, and it even recorded the incident to warn others </p>
 					</div>
 					<div class="subforum-stats subforum-column center">
-						<span>24 Posts | 12 Topics</span>
+						<span>4 Posts | 1 Topic</span>
 					</div>
 					<div class="subforum-info subforum-column">
-						<b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
-						<br>on <small>12 Dec 2020</small>
-					</div>
-				</div>
-				<hr class="subforum-devider">
-				<div class="subforum-row">
-					<div class="subforum-icon subforum-column center">
-						<i class="fa fa-car center"></i>
-					</div>
-					<div class="subforum-description subforum-column">
-						<h4><a href="#">Description Title</a></h4>
-						<p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
-					</div>
-					<div class="subforum-stats subforum-column center">
-						<span>24 Posts | 12 Topics</span>
-					</div>
-					<div class="subforum-info subforum-column">
-						<b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
-						<br>on <small>12 Dec 2020</small>
-					</div>
-				</div>
-				<hr class="subforum-devider">
-				<div class="subforum-row">
-					<div class="subforum-icon subforum-column center">
-						<i class="fa fa-car center"></i>
-					</div>
-					<div class="subforum-description subforum-column">
-						<h4><a href="#">Description Title</a></h4>
-						<p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
-					</div>
-					<div class="subforum-stats subforum-column center">
-						<span>24 Posts | 12 Topics</span>
-					</div>
-					<div class="subforum-info subforum-column">
-						<b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
-						<br>on <small>12 Dec 2020</small>
-					</div>
-				</div>
-				<hr class="subforum-devider">
-				<div class="subforum-row">
-					<div class="subforum-icon subforum-column center">
-						<i class="fa fa-car center"></i>
-					</div>
-					<div class="subforum-description subforum-column">
-						<h4><a href="#">Description Title</a></h4>
-						<p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
-					</div>
-					<div class="subforum-stats subforum-column center">
-						<span>24 Posts | 12 Topics</span>
-					</div>
-					<div class="subforum-info subforum-column">
-						<b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
-						<br>on <small>12 Dec 2020</small>
+						<b><a href="">Last post</a></b> by <a href="">Joe_Olson</a> 
+						<br>on <small>13 Dec 2020</small>
 					</div>
 				</div>
 			</div>
@@ -306,15 +284,17 @@
 						<i class="fa fa-car center"></i>
 					</div>
 					<div class="subforum-description subforum-column">
-						<h4><a href="#">Description Title</a></h4>
-						<p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
+						<h4><a href="#">RE: Forest saved me a ton of money</a></h4>
+						<p>Forest Just saved me from a rear end, it alerted me that I was in danger so I got out of the way and the car in front of me got rear ended.
+							Luckily they were ok, but now I dont have to worry about insurance and medical bills all thanks to Forest!🤠
+						</p>
 					</div>
 					<div class="subforum-stats subforum-column center">
-						<span>24 Posts | 12 Topics</span>
+						<span>10 Posts | 5 Topics</span>
 					</div>
 					<div class="subforum-info subforum-column">
-						<b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
-						<br>on <small>12 Dec 2020</small>
+						<b><a href="">Last post</a></b> by <a href="">Mike_Smith</a> 
+						<br>on <small>14 Dec 2020</small>
 					</div>
 				</div>
 				<hr class="subforum-devider">
@@ -323,15 +303,15 @@
 						<i class="fa fa-car center"></i>
 					</div>
 					<div class="subforum-description subforum-column">
-						<h4><a href="#">Description Title</a></h4>
-						<p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
+						<h4><a href="#">Replying-to-(Mike_Smith)</a></h4>
+						<p>Glad to hear that we could help, that's what we are here for 👍</p>
 					</div>
 					<div class="subforum-stats subforum-column center">
-						<span>24 Posts | 12 Topics</span>
+						<span>3,000 Posts | 487 Topics</span>
 					</div>
 					<div class="subforum-info subforum-column">
-						<b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
-						<br>on <small>12 Dec 2020</small>
+						<b><a href="">Last post</a></b> by <a href="">Forest_Admin</a> 
+						<br>on <small>15 Dec 2020</small>
 					</div>
 				</div>
 				<hr class="subforum-devider">
@@ -340,15 +320,15 @@
 						<i class="fa fa-car center"></i>
 					</div>
 					<div class="subforum-description subforum-column">
-						<h4><a href="#">Description Title</a></h4>
-						<p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
+						<h4><a href="#">eplying-to-(Forest_Admin)</a></h4>
+						<p>We love you Forest ❤️ 😍</p>
 					</div>
 					<div class="subforum-stats subforum-column center">
-						<span>24 Posts | 12 Topics</span>
+						<span>46 Posts | 11 Topics</span>
 					</div>
 					<div class="subforum-info subforum-column">
-						<b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
-						<br>on <small>12 Dec 2020</small>
+						<b><a href="">Last post</a></b> by <a href="">Betty_Alder</a> 
+						<br>on <small>15 Dec 2020</small>
 					</div>
 				</div>
 				<hr class="subforum-devider">
@@ -357,15 +337,15 @@
 						<i class="fa fa-car center"></i>
 					</div>
 					<div class="subforum-description subforum-column">
-						<h4><a href="#">Description Title</a></h4>
-						<p>Description Content: let's try to be cool, otherwise,w at 'sthe point in libing together with people youdont' live.</p>
+						<h4><a href="#">Replying-to-(Betty_Alder)</a></h4>
+						<p>Shiba Inu to the MOOONNN!!!!! Lets Go 💎🙌</p>
 					</div>
 					<div class="subforum-stats subforum-column center">
 						<span>24 Posts | 12 Topics</span>
 					</div>
 					<div class="subforum-info subforum-column">
-						<b><a href="">Last post</a></b> by <a href="">JustAUser</a> 
-						<br>on <small>12 Dec 2020</small>
+						<b><a href="">Last post</a></b> by <a href="">WSB_BULL</a> 
+						<br>on <small>16 Dec 2020</small>
 					</div>
 				</div>
 	
