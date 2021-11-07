@@ -8,6 +8,7 @@ aws-wsgi = "*"
 boto3 = "*"
 flask = "*"
 flask-cors = "*"
+openai = "*"
 
 [dev-packages]
 

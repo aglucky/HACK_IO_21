@@ -6,32 +6,48 @@ center: [-82.994149, 39.965160],
 zoom: 11.15
 });
  
-/*
-const getData = async () => {
-    const data = await 
-}
-*/
 
-var JSON_OBJECT = fetch('https://owsz3kcw32.execute-api.us-east-1.amazonaws.com/staging/api2/getMapData')
-.then(data => {
-return data.json();
-})
-.then(post => {
-console.log(post.title);
-});
-// TODO : Request from API, add it to addSource() object
-map.on('load', () => {
-map.addSource('places', JSON_OBJECT); // INSERT THE MAPBOX OBJECT HERE
-// Add a layer showing the places.
-map.addLayer({
-'id': 'places',
-'type': 'symbol',
-'source': 'places',
-'layout': {
-'icon-image': '{icon}',
-'icon-allow-overlap': true
+
+
+async function loadJson(){
+    const response = await fetch('https://owsz3kcw32.execute-api.us-east-1.amazonaws.com/staging/api2/getMapData').then(response => {return(response.json());});
+    
+    
 }
-});
+
+function sleep(milliseconds) {
+    const date = Date.now();
+    let currentDate = null;
+    do {
+      currentDate = Date.now();
+    } while (currentDate - date < milliseconds);
+  }
+
+
+
+
+    map.on('load', () => {
+        
+        map.loadImage('https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png',
+        (error, image) => {
+        if (error) throw error;
+        map.addImage('custom-marker', image);
+        map.addSource('places', {type:"geojson", data:"https://owsz3kcw32.execute-api.us-east-1.amazonaws.com/staging/api2/getMapData.geojson"});    
+        map.addLayer({
+            'id': 'places',
+            'type': 'symbol',
+            'source': 'places',
+            'layout': {
+            
+                    'icon-image': 'custom-marker',
+                    'icon-allow-overlap': true
+        }  
+        });}
+    
+    );
+    });
+
+
  
 
 map.on('click', 'places', (e) => {
@@ -56,5 +72,4 @@ map.getCanvas().style.cursor = 'pointer';
 
 map.on('mouseleave', 'places', () => {
 map.getCanvas().style.cursor = '';
-});
 });

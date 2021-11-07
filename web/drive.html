@@ -88,7 +88,7 @@
                         <button class="btn-btn-primary" onclick="document.getElementById('fileInput').click();">Upload A File</button>
                         <input id="fileInput" type="file" style="display:none;" />
                         <h2 class="text-white-50 mx-auto mt-2 mb-5">  </h2>
-                        <div class="acc_form">
+                        <div onclick="https://owsz3kcw32.execute-api.us-east-1.amazonaws.com/staging/api2/openaiPostData" class="acc_form">
                             <div class="form-group">
                                 <label for="comment">Enter Accident Description here:</label>
                             </div>
@@ -97,7 +97,7 @@
                             </div>
                             <h2 class="text-white-50 mx-auto mt-2 mb-5">  </h2>
                         <div class='yes'>
-                        <button class="btn-btn-primary2" type="generate driving advice" value="Generate Driving Advice">Generate Driving Advice</button>
+                        <button onclick="onClickHandler()"class="btn-btn-primary2" type="generate driving advice" value="Generate Driving Advice">Generate Driving Advice</button>
                         <br>
                         <br>
                         <div class="text_area">
@@ -105,6 +105,21 @@
                         </div>
                         </div>
                         </div>
+                        <script>
+                            function onClickHandler(){
+                                data = document.getElementById('comment').value
+                                var xhr = new XMLHttpRequest();
+                                xhr.open("POST", "https://owsz3kcw32.execute-api.us-east-1.amazonaws.com/staging/api2/openaiPostData", true);
+                                xhr.setRequestHeader('Content-Type', 'application/json');
+                                xhr.send(JSON.stringify({
+                                    value:data 
+                                }));
+                                xhr.onload = function(){
+                                    dataFile = this.responseText;
+                                    document.getElementById('advice').innerText = dataFile;
+                                }
+                                        }       
+                        </script>
                         <style>
                             .btn-btn-primary{
                                 background-color: #4CAF50; /* Green */

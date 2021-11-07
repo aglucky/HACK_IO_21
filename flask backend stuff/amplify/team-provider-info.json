@@ -19,7 +19,7 @@
         },
         "forestapi2": {
           "deploymentBucketName": "amplify-forest-staging-144318-deployment",
-          "s3Key": "amplify-builds/forestapi2-396b4f6f71734e766833-build.zip"
+          "s3Key": "amplify-builds/forestapi2-4c41506a5548424c794f-build.zip"
         }
       }
     }
