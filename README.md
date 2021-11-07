@@ -2,4 +2,4 @@
 
 An innovative way to improve traffic safety through communinity
 
-Create by Adam Gluck, Dhruv Venkataraman, Nick White, Matt Copfer
+Created by Adam Gluck, Dhruv Venkataraman, Nick White, Matt Copfer
